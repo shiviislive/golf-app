@@ -1,7 +1,6 @@
 const User = require("../models/user.model");
 const jwt = require("jsonwebtoken");
 
-console.log(User);
 exports.register = async (req, res) => {
   try {
     const { name, email, password } = req.body;
@@ -18,6 +17,8 @@ exports.register = async (req, res) => {
       process.env.JWT_SECRET,
       { expiresIn: "3d" }
     );
+        res.cookie('token', token) ;
+
 
     res.status(201).json({
       message: "User registered",
@@ -55,6 +56,9 @@ exports.login = async (req, res) => {
       process.env.JWT_SECRET,
       { expiresIn: "3d" }
     );
+
+        res.cookie('token', token) ;
+
 
     res.json({
       message: "Login successful",

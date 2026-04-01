@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Container */
+div {
+  max-width: 500px;
+  margin: auto;
+}
+
+/* Inputs */
+input {
+  padding: 10px;
+  margin: 5px 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Buttons */
+button {
+  padding: 10px 15px;
+  margin: 5px 5px 5px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Headings */
+h2, h3 {
+  text-align: center;
+}
+
+/* Score list */
+p {
+  background: white;
+  padding: 8px;
+  border-radius: 5px;
+  margin: 5px 0;
+}
