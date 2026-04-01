@@ -7,7 +7,7 @@ const app = express();
 app.use(cors({
   origin: [
     "http://localhost:5173", // local frontend
-    "https://your-frontend-url.vercel.app" // deployed frontend
+    "https://golf-app-gamma-two.vercel.app" // deployed frontend
   ],
   credentials: true
 }));
